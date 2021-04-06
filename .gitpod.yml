@@ -1,3 +1,6 @@
 tasks:
   - init: 'echo "TODO: Replace with init/build command"'
-    command: yarn global add @quasar/cli
+    command: 
+      yarn global add @quasar/cli && export PATH="$(yarn global bin):$PATH"
+      cd quasar-limon
+      yarn install
