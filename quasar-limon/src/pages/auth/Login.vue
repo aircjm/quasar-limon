@@ -5,7 +5,7 @@
         <q-card :style="$q.screen.lt.sm ? { width: '80%' } : { width: '45%' }">
           <q-card-section>
             <q-avatar size="100px" class="absolute-center shadow-10">
-              <img src="../../statics/profile.svg" />
+              <img src="../../statics/profile.svg"/>
             </q-avatar>
           </q-card-section>
           <q-card-section>
@@ -52,8 +52,8 @@
               <div>
                 <q-btn
                   label="Login"
-                  @click="submitLogin"
-                  @keyup.enter="submitLogin"
+                  @click="onSubmit"
+                  @keyup.enter="onSubmit"
                   type="button"
                   color="primary"
                 />
@@ -67,16 +67,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive } from 'vue';
+import {defineComponent, reactive} from 'vue';
 
 export default defineComponent({
   setup() {
     const loginForm = reactive({
-        username: '',
-        password: '',
-        rememberMe: false,
-        code: '',
-        uuid: ''
+      username: '',
+      password: '',
+      rememberMe: false,
+      code: '',
+      uuid: ''
     })
     return [loginForm]
   }
