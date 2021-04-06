@@ -78,25 +78,7 @@ export default defineComponent({
         code: '',
         uuid: ''
     })
-
-    const onSubmit = async (any: this.loginForm) => {
-
-      const params = JSON.stringify(state.result)
-      router.push({ path: '/create-order', query: { cartItemIds: params } })
-    }.then
-
     return [loginForm]
-
-  },
-  methods: {
-    submitLogin() {
-
-    getCode() {
-      getCodeImg().then((res) => {
-        this.codeUrl = 'data:image/gif;base64,' + res.img;
-        this.loginForm.uuid = res.uuid;
-      });
-    },
-  },
+  }
 });
 </script>

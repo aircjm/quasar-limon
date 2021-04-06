@@ -8,7 +8,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'TaskLists',
   setup() {
-    name: "HELLO"
+    name: "taskname"
   },
 })
 </script>
