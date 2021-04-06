@@ -53,7 +53,7 @@
                 <q-btn
                   label="Login"
                   @click="submitLogin"
-                  @keyup.enter.native="submitLogin"
+                  @keyup.enter="submitLogin"
                   type="button"
                   color="primary"
                 />

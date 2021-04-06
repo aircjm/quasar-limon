@@ -3,12 +3,19 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
   name: 'TaskLists',
   setup() {
-    name: "taskname"
+    const name = ref("hello")
+
+
+  return name
   },
 })
 </script>
+
+function ref(arg0: string) {
+  throw new Error('Function not implemented.')
+}
